@@ -1,0 +1,7 @@
+frase = str(input('qual seu nome inteiro? ')).strip()
+print('seu nome em maiusculo é {}'.format(frase.upper()))
+print('seu nome em minusculo é {}'.format(frase.lower()))
+print('ao todo seu nome tem {} letras'.format(len(frase) - frase.count(' ')))
+#print('seu primeiro nome tem {} letras'.format(frase.find('  ')))
+divisor = frase.split()
+print('seu primeiro nome {}, tem {} letras'.format( divisor[0],len(divisor[0])))
