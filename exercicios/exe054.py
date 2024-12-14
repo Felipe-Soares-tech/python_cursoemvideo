@@ -1,12 +1,19 @@
+#  Crie um programa que leia o ano de nascimento de sete pessoas. 
+#  No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+maior = 0
+menor = 0
 for i in range(7):
-    ano = int(input('diga que ano voce nasceu: '))
-    if ano < 2006:
-        print('\033[32m')#menor de idade
-    elif ano > 2006:
-        print('\033[31m')#maior de idade
+    ano = int(input('em que ano voce nasceu? '))
+    if ano <= 2006:
+        maior += 1
     else:
-        print('\033[34m')
-    print(i, end=' ')
+        menor += 1
+
+print(f'{maior} pessoas são maiores de idade')
+print(f'{menor} pessoas são menores de idade')
+
+
+
 
 
 
